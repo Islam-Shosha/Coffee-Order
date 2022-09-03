@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#DFE3DEDE"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+      android:layout_margin="10sp"
+       app:cardCornerRadius="10sp"
+        android:elevation="2sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:padding="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginStart="10sp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:paddingStart="10sp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/coffee_name"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="coffee express "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/add_coffee_name"
+                    android:paddingStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_add_24" />
+                <TextView
+                    android:id="@+id/counter"
+                    android:textStyle="bold"
+                    android:paddingStart="10dp"
+                    android:textColor="#001068"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/remove_coffee_names"
+                    android:paddingStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_remove_24" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:paddingStart="10dp"
+            android:id="@+id/coffee_price"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:text="24 EGP"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>
